@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div>
+            <input placeholder="Enter username..."
+                    type="text"
+                    id="input" /><br>
+            <button onclick="sendRoomId()">Send</button>
+            <button onclick="startCall()">Start Call</button>
+        </div>
+        <!--for video elements This will hold two video element-->
+        <div id="video">
+            <video muted id="local" autoplay></video>
+            <video id="remote" autoplay></video>
+            <div class="action">
+                <button onclick="muteVideo()">Mute Video</button>
+                <button onclick="muteAudio()">Mute Audio</button>
+            </div>
+        </div>
+        <script src="./sender.js"></script>
+    </body>
+
+</html>
